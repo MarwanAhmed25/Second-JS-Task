@@ -1,0 +1,16 @@
+:root{
+    --bg-dark-info: rgb(19 160 188);
+    --light-gray: #F7F7F7;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+
+h1{
+    font-weight: 700;
+    font-size: 60px;
+}
