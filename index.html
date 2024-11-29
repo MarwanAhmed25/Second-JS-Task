@@ -3,28 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/v5-font-face.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="css/v5-font-face.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light">
+<body class="">
     <main class="text-center vh-100 container">
-        <h1 class="text-center py-4">Quote of the Day</h1>
-        <p class="fs-2">Press the button below to recieve a random quote!</p>
-        <button class="btn btn-outline-primary fs-3 m-4" >New Quote</button>
-        <div  id="quote-section" class="shadow p-3 bg-body rounded bg-white w-75 mx-auto">
-            <p class="m-auto fs-4 my-3">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum molestiae officiis doloribus non fugiat eligendi."</p>
-            <span class="author text-secondary fs-5">-- Lorem, ipsum dolor.</span>
-        </div>
+        <h1 class="pacifico-regular p-5 m-2"><span>Bookmark</span></h1>
+        <h2 class="p-2"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+        <form>
+            <div class="form-group m-3 text-start">
+                <label for="name" class="m-2 fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Site Bookmark">
+            </div>
+            <div class="form-group m-3 text-start">
+                <label for="url" class="m-2 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="url" name="url" id="url" class="form-control" placeholder="Site URL">
+            </div>
+            <button type="submit" class="btn btn-warning m-4 px-5">Submit</button>
+        </form>
+        <table class="table my-4">
+            <thead>
+                <tr>
+                    <th class="col">Index</th>
+                <th class="col">Website Name</th>
+                <th class="col">Visit</th>
+                <th class="col">Update</th>
+                <th class="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle">1</td>
+                    <td class="align-middle">Name</td>
+                    <td><a href="#"><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Vist</button></a></td>
+                    <td><button class="btn btn-info"><i class="fa-solid fa-pen"></i> Update</button></td>
+                    <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <script src="js/bootstrap.bundle.js"></script>

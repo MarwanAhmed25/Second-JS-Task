@@ -7,10 +7,53 @@ body{
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     margin: 0;
+    background-color: RGB(247, 236, 222);
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+h1{
+    font-size: 50px;
+    border-bottom: 2px dotted gray;
+    position: relative;
+
 }
 
 
-h1{
-    font-weight: 700;
-    font-size: 60px;
+h1>span::after{
+    content: '';
+    display: block;
+    width: 220px;
+    margin: auto;
+    margin-top: -20px;
+    border-top: 20px solid rgb(232, 161, 100);
+    transition: border 1s, margin-top 1s;
+}
+
+h1>span:hover::after{
+    border-top: 35px solid rgb(232, 161, 100);
+    margin-top: -35px;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to right, green, var(--yellow, yellow));
+    background-clip: text;
+    color: transparent;
+  }
+  
+form{
+    border-bottom: 2px dotted gray;
+
+}
+
+button.custom-bg{
+    background-color: RGBA(187, 65, 32, 0.404);
 }
