@@ -1,59 +1,50 @@
-:root{
-    --bg-dark-info: rgb(19 160 188);
-    --light-gray: #F7F7F7;
-}
-
 body{
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    background-color: RGB(247, 236, 222);
+    font-family: "Titillium Web", sans-serif;
+    background-color: #24353F;
 }
 
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-h1{
-    font-size: 50px;
-    border-bottom: 2px dotted gray;
-    position: relative;
-
+section, input{
+    background-color: #24353F;
 }
 
-
-h1>span::after{
-    content: '';
-    display: block;
-    width: 220px;
-    margin: auto;
-    margin-top: -20px;
-    border-top: 20px solid rgb(232, 161, 100);
-    transition: border 1s, margin-top 1s;
+section{
+    box-shadow: 5px 5px 5px black;
 }
 
-h1>span:hover::after{
-    border-top: 35px solid rgb(232, 161, 100);
-    margin-top: -35px;
+input.custom-input{
+    background-color: #24353F;
+    color: gray;
+    border: gray 1px solid;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
-h2 {
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-image: linear-gradient(to right, green, var(--yellow, yellow));
-    background-clip: text;
-    color: transparent;
-  }
-  
-form{
-    border-bottom: 2px dotted gray;
-
+input.custom-input::placeholder{
+    color: gray;
 }
 
-button.custom-bg{
-    background-color: RGBA(187, 65, 32, 0.404);
+input.custom-input:focus{
+    background-color: #24353F;
+    color: gray;
+    box-shadow: none;
+}
+
+button.custom-btn:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.cutom-a:hover{
+    text-decoration: underline;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.w-70{
+    width: 70%;
 }
